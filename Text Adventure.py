@@ -1,0 +1,171 @@
+print("Welcome to The Woods!")
+print("You are a camper that was separated from your group.")
+print("You left your camp to use the bathroom. Unfortunately, you lost your way when you tried to come back.")
+print("You come across a fork in the path that you are on.")
+print("There is a path to the left, to the right, and center.")
+print("Which path would you like to take?")
+
+path_choice = input("< ")
+
+if path_choice == "left":
+    print("You decide to go left.")
+    print("The path is dark, and seems to just keep getting darker.")
+    print("Suddenly, further down the path, you see a pair of glowing yellow eyes.")
+    print("Do you keep walking down the path, or try to run back the way you came?")
+    print("keep walking/run back?")
+    choice1 = input("< ")
+    if choice1 == "keep walking":
+        print("You decide to bravely keep walking. The yellow eyes slink away into the darkness. You're safe for now.")
+        print("You keep going further down the path and notice something on the ground.")
+        print("Where the eyes had once been, a pocket watch was left on the ground.")
+        print("Do you pick up the pocket watch or ignore it? (pick up/ignore it.)")
+        pocket_watch = input("< ")
+        if pocket_watch == "pick up":
+            print("You pick up the pocket watch.")
+            print("It's a little old and rusty, but still working.")
+            print("You place it in your pocket and continue on your way.")
+            print("You see a light up ahead!")
+            print("It seems that you managed to find your way through the woods with no problem.")
+            print("Your friends greet you and you all sit down to a campfire meal together.")
+            print("Ending One: Good end.")
+        elif pocket_watch == "ignore it":
+            print("You decide to ignore the pocket watch.")
+            print("However, while you were deciding what to do, the figure with glowing yellow eyes appears behind you.")
+            print("You feel a sharp, cold pain as it shoves it's claws through your chest.")
+            print("You die alone in the woods.")
+            print("Ending Two: Alone.")
+        else:
+            print("Invalid choice. Please choose either 'pick up' or 'ignore it'.")
+    elif choice1 == "run back":
+        print("You decide to run back from the way you came.")
+        print("However, in your fear, you manage to get even more lost.")
+        print("You see a water fall on one side of you, and a clearing on the other.")
+        print("Do you want to go to the waterfall, or to the clearing? (waterfall/clearing)")
+        choice2 = input("< ")
+        if choice2 == "waterfall":
+            print("You decide to head towards the waterfall.")
+            print("The waterfall is small, the pool at the bottom clear and fresh looking.")
+            print("You become aware that the desperate sprint you earlier has made you thirsty.")
+            print("You look at the clear water in front of you.")
+            print("Do you want to take a drink of the water? (yes/no)")
+            drink = input("< ")
+            if drink == "yes":
+                print("You decide that you are thirsty enough to drink from the water.")
+                print("Unfortunately, though, you should have realized that no natural water source is safe to drink.")
+                print("Since you didn't have anything to filter the water with, you didn't kill off the micro-organisms living in it.")
+                print("You consumed a brain eating ameoba.")
+                print("At this point, does it really matter if you made it out of those woods?")
+                print("Ending Three: Unavoidable Death.")
+            elif drink == "no":
+                print("Using your brain, you decide not to drink the possibly ameoba ridden water.")
+                print("While you are debating what to do next, a group of night hikers come across your location.")
+                print("You tell them what's happened and they take you with them.")
+                print("Congratulations! You've been saved.")
+                print("Ending Four: Saved by Hikers.")
+            else:
+                print("Invalid answer. Please choose either 'yes' or 'no'.")
+        elif choice2 == "clearing":
+            print("You decide to enter the clearing.")
+            print("It was too dark for you to see from a distance, but there are some tents set up in the clearing.")
+            print("There are people sleeping inside of the tents.")
+            print("Do you wake them up? (yes/no)")
+            wake_up = input("< ")
+            if wake_up == "yes":
+                print("The people hear your voice calling out to them and wake up.")
+                print("They invite you to sleep there for the night.")
+                print("You sleep through the night and find your way back to your group in the morning.")
+                print("Ending Five: Sleep Over.")
+            elif wake_up == "no":
+                print("You decide not to wake the other campers up.")
+                print("However, one of them hears you walking around outside.")
+                print("Mistaking you for a wild animal, they shoot you.")
+                print("You bleed to death from your gunshot wound before anyone can stop it.")
+                print("Ending Six: Shot to Death.")
+            else:
+                print("Invalid answer. Please answer 'yes' or 'no'.")
+        else:
+            print("Invalid answer. Please choose either 'waterfall' or 'clearing'.")
+    else:
+        print("Invalid choice. Please choose either 'keep walking' or 'run back'.")
+elif path_choice == "right":
+    print("You decide to go down the right path.")
+    print("The path is narrow, the trees growing closer together the further you walk.")
+    print("Something seems off, but you can't quite put your finger on it.")
+    print("In the odd quiet of the woods, a sound becomes apparent.")
+    print("You can hear footsteps behind you.")
+    print("It's almost like they're trying to step in time with you, but it's off enough for you to notice now.")
+    print("Do you walk faster? (yes/no)")
+    speed = input("< ")
+    if speed == "yes":
+        print("You decide to speed up to a jog.")
+        print("You can hear the footstep behind you speed up as well.")
+        print("Do you speed up again? (yes/no)")
+        speed2 = input("< ")
+        if speed2 == "yes":
+            print("You decide to break out into a sprint.")
+            print("You can hear the footsteps slowly falling behind.")
+            print("You come across an old stone cottage, now out of breath.")
+            print("The cottage looks sturdy but moss covered.")
+            print("Whoever had been following you might still be looking for you.")
+            print("Do you take cover in the stone cottage? (yes/no)")
+            cover = input("< ")
+            if cover == "yes":
+                print("You decide to take cover in the old stone cottage.")
+                print("You push open the rotten wooden door and step inside.")
+                print("As you close the door, you notice the strange symbols written on the inside of the door.")
+                print("They look like they were written in some very old language.")
+                print("You hear noises from outside and sit on the floor with your back against the door.")
+                print("The noises pass you by, still looking for you but not sensing you.")
+                print("You wait there until morning comes, when it's safe to leave.")
+                print("Ending Seven: Protected by Ancient Runes.")
+            elif cover == "no":
+                print("You decide not to enter the stone cottage.")
+                print("It seems far too unsafe, so you turn away from the old building and keep running.")
+                print("You keep moving until morning.")
+                print("Unfortunately for you, since you had kept going without a clue where you were, you are now more lost than ever.")
+                print("You are left to wander the wilderness until rescuers come find you.")
+                print("Ending Eight: Barely Alive.")
+            else:
+                print("Invalid answer. Please choose either 'yes' or 'no'.")
+        elif speed2 == "no":
+            print("You decide that this is as fast as you need to go.")
+            print("The footsteps neither get closer nor farther away.")
+            print("However, in the dark, your foot hits a tree root that you hadn't seen.")
+            print("You hit the ground and the foot steps approach at an alarming speed.")
+            print("You turn onto your back in time to see a tall, lanky humanoid creature opening it's jaw.")
+            print("It skins you alive and eats the rest of you.")
+            print("Your friends and family don't know that the thing wearing your skin isn't... well, you.")
+            print("Ending Nine: Skinwalker.")
+        else:
+            print("Invalid answer. Please choose either 'yes' or 'no'.")
+    elif speed == "no":
+        print("You decide to keep walking at a normal pace.")
+        print("Your confidence and hubris catches up with you quickly, though.")
+        print("As does the creature.")
+        print("You hear the footsteps approach you at supernatural speeds before a hot pain spreads through your neck.")
+        print("In your last moments of ludidity, you see a tall, lanky humanoid stading before you decapitated body.")
+        print("Ending Ten: Beheaded.")
+    else:
+        print("Invalid answer. Please choose either 'yes' or 'no'.")
+elif path_choice == "center":
+    print("You decide to go down the center path.")
+    print("As it turns out, this is the way to the parking lot.")
+    print("You see your car in the distance and walk towards it.")
+    print("Out of the corner of your eye, you notice a shadowy figure out of the corner of your eye.")
+    print("You turn your head to get a good look and the figure is gone.")
+    print("You still have a very bad feeling, though.")
+    print("Do you get into your car? (yes/no)")
+    get_in = input("< ")
+    if get_in == "yes":
+        print("You get in and drive off. You can explain to your friends in the morning why you left.")
+        print("Ending Eleven: Survived.")
+    elif get_in == "no":
+        print("For some reason, you ignore the bad feeling you have and don't get into your car.")
+        print("While you're deciding what to do next, a figure comes up behind you.")
+        print("A drug addict stabs you through the back while you aren't looking and robs you.")
+        print("You bleed out in the parking lot, where your friends find you in the morning.")
+        print("Ending Twelve: Robbery Gone Wrong.")
+    else:
+        print("Invalid answer. Please choose either 'yes' or 'no'.")
+else:
+    print("Invalid answer. Please choose either 'left', 'right', or 'center'.")
